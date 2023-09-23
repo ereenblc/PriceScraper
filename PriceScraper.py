@@ -26,7 +26,7 @@ class PriceScraper():
         for product_name, product_price in zip(product_names, product_prices):
             product_data.append({
                 "Product Name": product_name.text,
-                "Price ": product_price.text
+                "Price ": product_price.text + " " + "TL"
             })
         return product_data
 
