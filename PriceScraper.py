@@ -10,7 +10,7 @@ target_product = input("Which product you looking for? : ")
 class PriceScraper():
     def __init__(self):
         self.driver = webdriver.Chrome()
-        
+
     def amazon_list(self):
         self.driver.get("https://www.amazon.com.tr/")
         WebDriverWait(self.driver, 10).until(
